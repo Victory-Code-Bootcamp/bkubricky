@@ -6,8 +6,8 @@ This is a template repository for participants of the Victory Code Bootcamp to k
 Folder Structure
 ----------------
 
--   `codingtovictory`: This folder includes the lesson challenge and take-home challenge for the Coding to Victory section of the bootcamp.
--   `responsivevictory`: This folder includes the lesson challenge and take-home challenge for the Responsive Victory section of the bootcamp.
+-   `coding-to-victory`: This folder includes the lesson challenge and take-home challenge for the Coding to Victory section of the bootcamp.
+-   `responsive-victory`: This folder includes the lesson challenge and take-home challenge for the Responsive Victory section of the bootcamp.
 -   `js`: This folder includes the lesson challenge and take-home challenge for the JavaScript section of the bootcamp.
 -   `react`: This folder includes the lesson challenge and take-home challenge for the React section of the bootcamp.
 
