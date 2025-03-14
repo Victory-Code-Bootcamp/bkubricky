@@ -1,0 +1,30 @@
+#punch-line {
+  display: none;
+}
+
+#reveal {
+  color: blue;
+  font-size: 28px;
+  padding-bottom: 16px;
+  width: 50px;
+}
+
+#reveal:hover + #joke {
+  display: none;
+}
+
+#reveal:hover ~ #punch-line {
+  display: block;
+}
+#hidden-message:hover p {
+  visibility: hidden;
+}
+#other-message {
+  display: none;
+}
+#last-joke:hover + #other-message {
+  display: block;
+}
+#last-joke:hover + #hidden-message p {
+  visibility: hidden;
+}
