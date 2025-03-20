@@ -29,5 +29,16 @@
       <br />
       <meter value="80" min="20" max="100"></meter>
     </div>
+    <div class="progress">
+      <div class="progress__fill"></div>
+      <span class="progress__text">0%</span>
+    </div>
+    <script>
+      function updateProgressBar(progressBar, value) {
+        value = Math.round(value);
+        progressBar.querySelector(".progress__fill").style.width = `${value}%`;
+        progressBar.querySelector(".progress__text").textContent = `${value}%`;
+      }
+    </script>
   </body>
 </html>
