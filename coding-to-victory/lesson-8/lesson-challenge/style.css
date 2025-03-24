@@ -1,0 +1,33 @@
+body {
+  width: 95vw;
+  background-color: antiquewhite;
+  margin: auto;
+}
+header {
+  width: 100%;
+  background-color: lightgray;
+}
+main {
+  display: flex;
+  background-color: cadetblue;
+}
+.left_main {
+  flex: 70%;
+}
+.right_main {
+  flex: 30%;
+}
+section,
+article {
+  padding: 5%;
+  background-color: royalblue;
+  flex-direction: column;
+}
+aside {
+  padding: 5%;
+  background-color: blueviolet;
+}
+footer {
+  width: 100%;
+  background-color: lightcyan;
+}
