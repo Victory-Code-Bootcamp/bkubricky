@@ -1,0 +1,13 @@
+#show,
+#hide {
+  padding: 25px;
+}
+#show {
+  display: none;
+}
+#main:hover + #show {
+  display: block;
+}
+#main:hover ~ #hide {
+  display: none;
+}

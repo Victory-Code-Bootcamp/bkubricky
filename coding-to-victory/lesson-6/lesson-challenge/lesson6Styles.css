@@ -1,0 +1,66 @@
+/* Example of hover effect on an image */
+img {
+  width: 20vw;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+/* Style for Roman numeral list */
+ol[type="I"] li {
+  font-family: "Times New Roman", serif;
+  padding: 5px 0;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 110%;
+  margin-left: -60px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+li {
+  position: relative;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {
+    left: 50vw;
+  }
+  to {
+    left: 0px;
+  }
+}
+#first {
+  animation-timing-function: ease-in;
+  animation: mymove 5s;
+}
+#second {
+  animation-timing-function: ease-in;
+  animation: mymove 6s;
+}
+#third {
+  animation-timing-function: ease-in;
+  animation: mymove 7s;
+}

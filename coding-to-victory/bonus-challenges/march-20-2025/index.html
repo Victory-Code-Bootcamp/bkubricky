@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible, Scalar, and Progress Indicators</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="collapsible">
+        <input type="checkbox" id="collapsible-head" />
+        <label for="collapsible-head"
+          >Collapsible Using Only HTML and CSS</label
+        >
+        <div class="collapsible-text">
+          <h2>Collapsing Heading</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+            voluptates quasi cupiditate sequi asperiores doloremque, nam in
+            accusamus ipsam, perspiciatis molestias. Adipisci iste, magni fuga
+            excepturi tempore aut quae tempora.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="scalar">
+      <h2>Confidence level displayed in Scalar</h2>
+      <br />
+      <meter value="80" min="20" max="100"></meter>
+    </div>
+    <div class="progress">
+      <div class="progress__fill"></div>
+      <span class="progress__text">0%</span>
+    </div>
+    <script>
+      function updateProgressBar(progressBar, value) {
+        value = Math.round(value);
+        progressBar.querySelector(".progress__fill").style.width = `${value}%`;
+        progressBar.querySelector(".progress__text").textContent = `${value}%`;
+      }
+    </script>
+  </body>
+</html>
