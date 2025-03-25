@@ -6,10 +6,24 @@ body {
 header {
   width: 100%;
   background-color: lightgray;
+  padding: 1vw;
+}
+nav {
+  text-align: center;
+}
+a {
+  padding: 1vw 2vw;
+  color: black;
+}
+a:hover {
+  background-color: darkgray;
+  color: antiquewhite;
 }
 main {
   display: flex;
   background-color: cadetblue;
+  justify-content: center;
+  align-items: center;
 }
 .left_main {
   flex: 70%;
@@ -30,4 +44,5 @@ aside {
 footer {
   width: 100%;
   background-color: lightcyan;
+  text-align: center;
 }
