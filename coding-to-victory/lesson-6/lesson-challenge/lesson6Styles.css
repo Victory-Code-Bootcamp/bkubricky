@@ -1,6 +1,7 @@
 /* Example of hover effect on an image */
 img {
-  width: 20vw;
+  width: 50vw;
+  max-width: 500px;
 }
 img:hover {
   transform: scale(1.1);
@@ -14,7 +15,6 @@ ol[type="I"] li {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
@@ -28,12 +28,12 @@ ol[type="I"] li {
   position: absolute;
   z-index: 1;
   top: 80%;
-  left: 110%;
+  left: 100%;
   margin-left: -60px;
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 3s;
 }
 
 .tooltip:hover .tooltiptext {
