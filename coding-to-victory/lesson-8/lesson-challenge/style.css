@@ -9,10 +9,12 @@ body {
   text-align: center;
 }
 header {
-  background-color: rgb(164, 250, 254);
+  background-color: rgba(164, 250, 254, 0.8);
+  border-radius: 3px;
+  overflow: hidden;
 }
 nav {
-  background-color: rgb(102, 165, 141);
+  background-color: rgba(102, 165, 141, 0.8);
 }
 .main {
   background-color: rgba(180, 215, 227, 0.1);
@@ -24,20 +26,21 @@ nav {
   margin: 0 2vw;
 }
 section {
-  background-color: rgb(248, 152, 126);
+  background-color: rgba(248, 152, 126, 0.7);
   height: 50%;
 }
 article {
-  background-color: rgb(219, 176, 168);
+  background-color: rgba(219, 176, 168, 0.7);
   height: 50%;
 }
 .column2 {
   margin: 0 1%;
 }
 aside {
-  background-color: rgb(255, 79, 248);
+  background-color: rgba(255, 79, 248, 0.7);
   height: 100%;
 }
 footer {
-  background-color: rgb(255, 223, 107);
+  background-color: rgba(255, 223, 107, 0.8);
+  border-radius: 3px;
 }
