@@ -1,0 +1,15 @@
+body {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 900 */
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: darkgray;
+  width: 90vw;
+  margin: auto;
+}
+p {
+  font-size: 2rem;
+}
