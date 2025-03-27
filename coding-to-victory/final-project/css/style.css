@@ -3,6 +3,24 @@ body {
   background-color: rgb(52, 63, 92);
   margin: auto;
 }
+h1,
+i {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 800 */
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: antiquewhite;
+}
+p {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 900 */
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
 #active {
   color: rgb(65, 181, 243);
 }
@@ -22,9 +40,11 @@ nav {
 }
 i {
   font-size: 5vh;
+  font-weight: bold;
   padding-left: 2vw;
 }
-a {
+a,
+i {
   color: rgb(189, 41, 45);
 }
 .tooltip {
@@ -32,15 +52,17 @@ a {
   display: inline-block;
 }
 .tooltip .tooltiptext {
+  font-family: "Open Sans", sans-serif;
+
   visibility: hidden;
   background-color: rgb(189, 41, 45);
   color: rgb(30, 36, 53);
   text-align: center;
   border-radius: 4px;
   padding: 5px 2px;
-  top: 110%;
-  left: 50%;
-  margin: auto;
+  /* top: 110%;
+  left: 45%; */
+  margin-left: 1vw;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -52,21 +74,4 @@ a {
 #main {
   margin: auto;
   width: 95%;
-}
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  /* <weight>: Use a value from 300 to 800 */
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: antiquewhite;
-}
-p {
-  font-family: "Winky Sans", sans-serif;
-  font-optical-sizing: auto;
-  /* <weight>: Use a value from 300 to 900 */
-  font-weight: 300;
-  font-style: normal;
-  color: white;
 }
