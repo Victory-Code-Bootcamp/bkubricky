@@ -1,7 +1,9 @@
 body {
+  
   width: 95vw;
   background-color: rgb(52, 63, 92);
   margin: auto;
+  margin-top: 1vh;
 }
 
 h1,
@@ -89,5 +91,5 @@ iframe {
 #main {
   margin: auto;
   width: 95%;
-  height: 80vh;
+  min-height: 75vh;
 }
