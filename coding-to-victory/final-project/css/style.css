@@ -55,6 +55,14 @@ a,
 i {
   color: rgb(189, 41, 45);
 }
+iframe {
+  width: 50vw;
+  height: 50vh;
+  min-width: 600px;
+  min-height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 .tooltip {
   position: relative;
   display: inline-block;
@@ -68,29 +76,16 @@ i {
   text-align: center;
   border-radius: 4px;
   padding: 5px 2px;
-  /* top: 110%;
-  left: 45%; */
   margin-left: 1vw;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-}
-iframe {
-  /* float: right; */
-  width: 50vw;
-  height: 50vh;
-  min-width: 600px;
-  min-height: 450px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 #main {
   margin: auto;
-  /* width: 95%; */
-  /* min-height: 75vh; */
 }
 #container {
   background: white;
@@ -109,13 +104,15 @@ textarea {
   border-radius: 4px;
 }
 button {
-  width: 100%;
+  width: 90%;
   padding: 10px;
-  background: #28a745;
+  background: rgb(65, 181, 243);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: auto;
 }
 button:hover {
   background: #218838;
