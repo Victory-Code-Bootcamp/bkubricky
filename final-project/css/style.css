@@ -40,6 +40,7 @@ footer {
 header img,
 footer img {
   height: 10vh;
+  min-width: 500px;
   float: left;
 }
 nav {
@@ -58,7 +59,7 @@ i {
 iframe {
   width: 50vw;
   height: 50vh;
-  min-width: 600px;
+  min-width: 500px;
   min-height: 450px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
