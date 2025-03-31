@@ -76,7 +76,7 @@ i {
   z-index: 1;
 }
 iframe {
-  float: right;
+  /* float: right; */
   width: 50vw;
   height: 50vh;
   min-width: 600px;
@@ -89,8 +89,8 @@ iframe {
 }
 #main {
   margin: auto;
-  width: 95%;
-  min-height: 75vh;
+  /* width: 95%; */
+  /* min-height: 75vh; */
 }
 #container {
   background: white;
