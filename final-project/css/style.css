@@ -32,6 +32,7 @@ footer {
   height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    min-width: 500px;
 }
 footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
@@ -40,7 +41,6 @@ footer {
 header img,
 footer img {
   height: 10vh;
-  min-width: 500px;
   float: left;
 }
 nav {
