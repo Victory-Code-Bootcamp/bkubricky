@@ -32,6 +32,7 @@ footer {
   height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    min-width: 500px;
 }
 footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
@@ -58,10 +59,11 @@ i {
 iframe {
   width: 50vw;
   height: 50vh;
-  min-width: 600px;
+  min-width: 500px;
   min-height: 450px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 2vh auto;
 }
 .tooltip {
   position: relative;
@@ -116,4 +118,13 @@ button {
 }
 button:hover {
   background: #218838;
+}
+#email {
+  margin-right: 20px;
+  display: block;
+  text-align: right;
+}
+#YouTube-He-Man {
+  display: block;
+  text-align: right;
 }
