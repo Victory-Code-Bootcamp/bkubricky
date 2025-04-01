@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/images/K-logo.png" type="image/png" />
+
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/d0473b8dee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <img src="/images/Kubricky-logo.png" alt="" />
+
+      <nav>
+        <a href="index.html" class="tooltip">
+          <i class="fa-solid fa-house"></i
+          ><span class="tooltiptext">Home</span></a
+        >
+        <a href="about.html" class="tooltip">
+          <i class="fa-solid fa-circle-info"></i
+          ><span class="tooltiptext">About</span></a
+        >
+        <a href="contact.html" class="tooltip"
+          ><i class="fa-solid fa-address-book" id="active"></i
+          ><span class="tooltiptext">Contact</span></a
+        >
+      </nav>
+    </header>
+    <div id="container">
+      <h2>Send me a message</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <img src="/images/Kubricky-logo.png" alt="Kubricky logo" />
+      <nav>
+        <a
+          href="https://github.com/Victory-Code-Bootcamp/bkubricky"
+          class="tooltip"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i
+          ><span class="tooltiptext">GitHub</span></a
+        >
+        <a
+          href="https://bsky.app/profile/benjakub.bsky.social"
+          class="tooltip"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fa-brands fa-bluesky"></i
+          ><span class="tooltiptext">Bluesky</span></a
+        >
+        <a
+          href="discord://-/users/benjamin_79599"
+          class="tooltip"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa-brands fa-discord"></i
+          ><span class="tooltiptext">Discord</span></a
+        >
+        <a
+          href="https://github.com/bkubricky
+        "
+          class="tooltip"
+          rel="noopener noreferrer"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+          ><span class="tooltiptext">LinkedIn</span></a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>
