@@ -1,0 +1,130 @@
+body {
+  width: 95vw;
+  background-color: rgb(52, 63, 92);
+  margin: auto;
+  margin-top: 1vh;
+}
+
+h1,
+i {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 800 */
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: antiquewhite;
+}
+p {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* <weight>: Use a value from 300 to 900 */
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+#active {
+  color: rgb(65, 181, 243);
+}
+header,
+footer {
+  background-color: rgb(30, 36, 53);
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  min-width: 500px;
+}
+footer {
+  box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
+    rgba(0, 0, 0, 0.22) 15px 0px 12px;
+}
+header img,
+footer img {
+  height: 10vh;
+  float: left;
+}
+nav {
+  text-align: center;
+  padding-top: 1vh;
+}
+i {
+  font-size: 5vh;
+  font-weight: bold;
+  padding-left: 2vw;
+}
+a,
+i {
+  color: rgb(189, 41, 45);
+}
+iframe {
+  width: 50vw;
+  height: 50vh;
+  min-width: 500px;
+  min-height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 2vh auto;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  font-family: "Open Sans", sans-serif;
+
+  visibility: hidden;
+  background-color: rgb(65, 181, 243);
+  color: rgb(30, 36, 53);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 2px;
+  margin-left: 1vw;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#main {
+  margin: auto;
+}
+#container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 5vh auto;
+}
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 90%;
+  padding: 10px;
+  background: rgb(65, 181, 243);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+button:hover {
+  background: #218838;
+}
+#email {
+  margin-right: 20px;
+  display: block;
+  text-align: right;
+}
+#YouTube-He-Man {
+  display: block;
+  text-align: right;
+}
