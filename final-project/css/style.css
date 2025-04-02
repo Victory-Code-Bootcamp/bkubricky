@@ -1,5 +1,5 @@
 body {
-  width: 95vw;
+  width: 100vw;
   background-color: rgb(52, 63, 92);
   margin: auto;
   margin-top: 1vh;
@@ -32,11 +32,19 @@ footer {
   height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    min-width: 500px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+header {
+  top: 0;
 }
 footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
     rgba(0, 0, 0, 0.22) 15px 0px 12px;
+  bottom: 0;
+  /* display: flex;
+    flex-wrap: wrap; */
 }
 header img,
 footer img {
@@ -53,17 +61,18 @@ i {
   padding-left: 2vw;
 }
 a,
-i {
+i,
+footer {
   color: rgb(189, 41, 45);
 }
 iframe {
   width: 50vw;
   height: 50vh;
-  min-width: 500px;
+  min-width: 600px;
   min-height: 450px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin: 2vh auto;
+  margin: 2vh auto;
 }
 .tooltip {
   position: relative;
@@ -87,7 +96,7 @@ iframe {
   visibility: visible;
 }
 #main {
-  margin: auto;
+  margin: 10vh auto;
 }
 #container {
   background: white;
@@ -95,7 +104,7 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
-  margin: 5vh auto;
+  margin: 10vh auto 1vh auto;
 }
 input,
 textarea {
@@ -121,10 +130,23 @@ button:hover {
 }
 #email {
   margin-right: 20px;
-  display: block;
-  text-align: right;
+  /* display: block; */
+  /* text-align: right; */
 }
 #YouTube-He-Man {
   display: block;
   text-align: right;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .info {
+    font-size: 0.7em;
+  }
+  iframe {
+    width: 100vw;
+  }
 }
