@@ -97,6 +97,7 @@ iframe {
 }
 #main {
   margin: 10vh auto;
+  width: 90vw;
 }
 #container {
   background: white;
@@ -143,6 +144,9 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  #main {
+    width: 100vw;
+  }
   .info {
     font-size: 0.7em;
   }
