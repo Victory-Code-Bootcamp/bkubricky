@@ -39,7 +39,7 @@
     </header>
     <div id="container">
       <h2>Send me a message</h2>
-      <form action="/submit" method="POST">
+      <form name="contact" action="/submit" method="POST" data-netlify="true">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
         <br />
@@ -94,7 +94,11 @@
           ><span class="tooltiptext">LinkedIn</span></a
         >
       </nav>
-      <a href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website." id="email">Send Email</a>
+      <a
+        href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
+        id="email"
+        >Send Email</a
+      >
     </footer>
   </body>
 </html>
