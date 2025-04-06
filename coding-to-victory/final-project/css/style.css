@@ -12,7 +12,7 @@ i {
   /* <weight>: Use a value from 300 to 800 */
   font-weight: 600;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-variation-settings: "width" 100;
   color: antiquewhite;
 }
 p {
@@ -38,8 +38,12 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
     rgba(0, 0, 0, 0.22) 15px 0px 12px;
 }
-header {
+#donate {
+  width: 50vw;
+  margin: auto;
+  text-align: center;
 }
+
 header img,
 footer img {
   height: 10vh;
