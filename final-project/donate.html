@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/K-logo.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/d0473b8dee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Donate</title>
+  
+</head>
+<body>
+    <header>
+        <a href="index.html"
+        ><img src="/images/Kubricky-logo.png" alt="home page"
+      /></a>        <nav>
+          <a href="index.html" class="tooltip">
+            <i class="fa-solid fa-house" ></i
+            ><span class="tooltiptext">Home</span></a
+          >
+          <a href="about.html" class="tooltip">
+            <i class="fa-solid fa-circle-info"></i
+            ><span class="tooltiptext">About</span></a
+          >
+          <a href="contact.html" class="tooltip"
+            ><i class="fa-solid fa-address-book"></i
+            ><span class="tooltiptext">Contact</span></a
+          >
+          <a href="donate.html" class="tooltip"
+            ><i class="fa-solid fa-circle-dollar-to-slot" id="active"></i
+            ><span class="tooltiptext">Donate</span></a
+          >
+        </nav>
+      </header>
+    <div id="donate">
+  <h1>Thank You for Your Support!</h1>
+  <p>
+    Your generous donation fuels my passion for coding and empowers me to continue building innovative, user-focused web experiences. Every contribution directly supports the time, tools, and creativity needed to craft better, smarter, and more engaging digital solutions. With your help, I’m able to push the boundaries of design and development, bringing increasingly impressive projects to life. I’m truly grateful for your belief in my work—it means the world. Because of you, I can keep learning, growing, and delivering the kind of web experiences that inspire and connect. Thank you for being a part of this journey.</p>
+  
+  <stripe-buy-button
+  buy-button-id="buy_btn_1RAw1YFCG4Mi90tupyiKz9Rv"
+  publishable-key="pk_live_51RAvRtFCG4Mi90tuC3XIqCuAI9CToPgcoLHTLgABlQDo19q4pHMefVsADs6Vdy34eVUS7Kw8OQlry8VcwuW97hIh00k6eYWRE1"
+  >
+</stripe-buy-button>  </a>
+</div>
+<footer>
+    <a href="index.html"
+    ><img src="/images/Kubricky-logo.png" alt="home page"
+  /></a>    <nav>
+      <a
+        href="https://github.com/Victory-Code-Bootcamp/bkubricky"
+        class="tooltip"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i class="fa-brands fa-github"></i
+        ><span class="tooltiptext">GitHub</span></a
+      >
+      <a
+        href="https://bsky.app/profile/benjakub.bsky.social"
+        class="tooltip"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <i class="fa-brands fa-bluesky"></i
+        ><span class="tooltiptext">Bluesky</span></a
+      >
+      <a
+        href="discord://-/users/benjamin_79599"
+        class="tooltip"
+        rel="noopener noreferrer"
+        target="_blank"
+        ><i class="fa-brands fa-discord"></i
+        ><span class="tooltiptext">Discord</span></a
+      >
+      <a
+        href="https://www.linkedin.com/in/benjamin-kubricky-01003a338/
+      "
+        class="tooltip"
+        rel="noopener noreferrer"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin-in"></i
+        ><span class="tooltiptext">LinkedIn</span></a
+      >
+    </nav>
+    <div class="info">
+        <span>&copy; 2025 Kubricky Enterprises. All Rights Reserved.</span>
+        <a
+          href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
+          id="email"
+          >Send Email</a
+        >
+      </div>
+  </footer>
+<script async
+src="https://js.stripe.com/v3/buy-button.js">
+</script>
+</body>
+</html>
