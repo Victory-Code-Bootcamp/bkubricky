@@ -1,5 +1,5 @@
 body {
-  width: 95vw;
+  width: 100vw;
   background-color: rgb(52, 63, 92);
   margin: auto;
   margin-top: 1vh;
@@ -30,20 +30,40 @@ header,
 footer {
   background-color: rgb(30, 36, 53);
   height: 10vh;
-  box-shadow: rgba(41, 41, 41, 0.3) 0px 19px 38px,
-    rgba(41, 41, 41, 0.22) 0px 15px 12px;
-  min-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+header {
+  top: 0;
 }
 footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
     rgba(0, 0, 0, 0.22) 15px 0px 12px;
+  bottom: 0;
 }
 #donate {
   width: 50vw;
-  margin: auto;
+  margin: 10vh auto;
   text-align: center;
 }
-
+details {
+  width: 95%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 1vh;
+}
+details p {
+  color: rgb(30, 36, 53);
+}
+details img {
+  max-width: 95%;
+}
 header img,
 footer img {
   height: 10vh;
@@ -56,11 +76,15 @@ nav {
 i {
   font-size: 5vh;
   font-weight: bold;
-  padding-left: 2vw;
+  margin: 1vh 2vw;
 }
 a,
-i {
+i,
+footer {
   color: rgb(189, 41, 45);
+}
+button:hover {
+  background-color: rgb(189, 41, 45);
 }
 iframe {
   width: 50vw;
@@ -84,7 +108,8 @@ iframe {
   text-align: center;
   border-radius: 4px;
   padding: 5px 2px;
-  margin-left: 1vw;
+  margin: 2vh 0 0 0;
+
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
@@ -93,7 +118,8 @@ iframe {
   visibility: visible;
 }
 #main {
-  margin: auto;
+  margin: 10vh auto;
+  width: 90vw;
 }
 #container {
   background: white;
@@ -101,7 +127,7 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
-  margin: 5vh auto;
+  margin: 10vh auto 1vh auto;
 }
 input,
 textarea {
@@ -122,15 +148,47 @@ button {
   display: block;
   margin: auto;
 }
-button:hover {
-  background: #218838;
-}
+
 #email {
   margin-right: 20px;
-  display: block;
-  text-align: right;
 }
 #YouTube-He-Man {
   display: block;
   text-align: right;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+details {
+  width: 95%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  margin-bottom: 1vh;
+}
+details p {
+  color: rgb(30, 36, 53);
+}
+details img {
+  max-width: 95%;
+  margin: auto;
+}
+summary {
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100vw;
+  }
+  .info {
+    font-size: 0.7em;
+  }
+  iframe {
+    width: 95vw;
+    margin: auto;
+  }
 }

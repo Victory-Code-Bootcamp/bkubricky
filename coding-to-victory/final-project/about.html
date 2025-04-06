@@ -20,14 +20,15 @@
   </head>
   <body>
     <header>
-      <img src="/images/Kubricky-logo.png" alt="" />
-
+      <a href="index.html"
+        ><img src="/images/Kubricky-logo.png" alt="home page"
+      /></a>
       <nav>
         <a href="index.html" class="tooltip">
           <i class="fa-solid fa-house"></i
           ><span class="tooltiptext">Home</span></a
         >
-        <a href="_" class="tooltip">
+        <a href="about.html" class="tooltip">
           <i class="fa-solid fa-circle-info" id="active"></i
           ><span class="tooltiptext">About</span></a
         >
@@ -35,13 +36,51 @@
           ><i class="fa-solid fa-address-book"></i
           ><span class="tooltiptext">Contact</span></a
         >
+        <a href="donate.html" class="tooltip"
+          ><i class="fa-solid fa-circle-dollar-to-slot"></i
+          ><span class="tooltiptext">Donate</span></a
+        >
       </nav>
     </header>
     <div id="main">
-      <h1>About Page</h1>
+      <h1>A Little About Me Page</h1>
+      <details>
+        <summary>First years</summary>
+        <p>As a kid, I loved fishing with my dad.</p>
+        <img
+          src="/images/Dad and Ben fishing.jpg"
+          alt="Me and my dad fishing"
+        />
+      </details>
+      <details>
+        <summary>Young adult</summary>
+        <p>I enjoy playing sports, even pole vaulting!</p>
+        <img
+          src="/images/Pole vaulting.jpg"
+          alt="Pole vaulting in High School"
+        />
+      </details>
+      <details>
+        <summary>Adulthood</summary>
+        <p>It's important to travel and see the world.</p>
+        <img
+          src="/images/Standing in Munich.png"
+          alt="Visiting Munich, Germany."
+        />
+      </details>
+      <details>
+        <summary>Professional</summary>
+        <p>Always set yourself up for success</p>
+        <img
+          src="/images/My work setup.jpg"
+          alt="Three monitors is sometimes not enough"
+        />
+      </details>
     </div>
     <footer>
-      <img src="/images/Kubricky-logo.png" alt="Kubricky logo" />
+      <a href="index.html"
+        ><img src="/images/Kubricky-logo.png" alt="home page"
+      /></a>
       <nav>
         <a
           href="https://github.com/Victory-Code-Bootcamp/bkubricky"
@@ -79,11 +118,14 @@
           ><span class="tooltiptext">LinkedIn</span></a
         >
       </nav>
-      <a
-        href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&amp;body=Hi,%20I%20really%20like%20your%20website."
-        id="email"
-        >Send Email</a
-      >
+      <div class="info">
+        <span>&copy; 2025 Kubricky Enterprises. All Rights Reserved.</span>
+        <a
+          href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
+          id="email"
+          >Send Email</a
+        >
+      </div>
     </footer>
   </body>
 </html>
