@@ -43,6 +43,7 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.3) 19px 0px 38px,
     rgba(0, 0, 0, 0.22) 15px 0px 12px;
   bottom: 0;
+  height: 11vh;
 }
 #donate {
   width: 50vw;
@@ -160,6 +161,9 @@ button {
   display: flex;
   justify-content: space-between;
 }
+.info span {
+  padding-bottom: 1vh;
+}
 details {
   width: 95%;
   background-color: white;
@@ -230,8 +234,12 @@ dialog::backdrop {
 }
 
 @media (max-width: 600px) {
+  body {
+    width: 100vw;
+  }
   #main {
     width: 95vw;
+    min-width: 600px;
     margin: auto;
   }
   .info {
