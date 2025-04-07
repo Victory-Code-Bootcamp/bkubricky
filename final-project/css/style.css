@@ -163,6 +163,7 @@ button {
 }
 .info span {
   padding-bottom: 1vh;
+  margin: 0 5px;
 }
 details {
   width: 95%;
