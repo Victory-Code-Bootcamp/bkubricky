@@ -235,19 +235,18 @@ dialog::backdrop {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-  }
   #main {
-    width: 95vw;
-    min-width: 600px;
+    width: 95%;
+    /* min-width: 600px; */
     margin: 12vh auto;
+    text-align: center;
   }
+
   .info {
     font-size: 0.7em;
   }
   iframe {
-    width: 95vw;
+    width: 95%;
     margin: auto;
   }
   footer {
@@ -255,5 +254,11 @@ dialog::backdrop {
   }
   #email {
     margin-right: 0;
+  }
+  #donate {
+    width: 100%;
+  }
+  details {
+    width: 95%;
   }
 }
