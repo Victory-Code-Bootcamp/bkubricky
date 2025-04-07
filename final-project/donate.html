@@ -53,54 +53,75 @@
 </stripe-buy-button>  </a>
 </div>
 <footer>
-    <a href="index.html"
+  <a href="index.html"
     ><img src="/images/Kubricky-logo.png" alt="home page"
-  /></a>    <nav>
-      <a
-        href="https://github.com/Victory-Code-Bootcamp/bkubricky"
-        class="tooltip"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i class="fa-brands fa-github"></i
-        ><span class="tooltiptext">GitHub</span></a
-      >
-      <a
-        href="https://bsky.app/profile/benjakub.bsky.social"
-        class="tooltip"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i class="fa-brands fa-bluesky"></i
-        ><span class="tooltiptext">Bluesky</span></a
-      >
-      <a
-        href="discord://-/users/benjamin_79599"
-        class="tooltip"
-        rel="noopener noreferrer"
-        target="_blank"
-        ><i class="fa-brands fa-discord"></i
-        ><span class="tooltiptext">Discord</span></a
-      >
-      <a
-        href="https://www.linkedin.com/in/benjamin-kubricky-01003a338/
-      "
-        class="tooltip"
-        rel="noopener noreferrer"
-        target="_blank"
-        ><i class="fa-brands fa-linkedin-in"></i
-        ><span class="tooltiptext">LinkedIn</span></a
-      >
-    </nav>
-    <div class="info">
-        <span>&copy; 2025 Kubricky Enterprises. All Rights Reserved.</span>
-        <a
-          href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
-          id="email"
-          >Send Email</a
-        >
-      </div>
-  </footer>
+  /></a>
+  <nav>
+    <a
+      href="https://github.com/Victory-Code-Bootcamp/bkubricky"
+      class="tooltip"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i
+      ><span class="tooltiptext">GitHub</span></a
+    >
+    <a
+      href="https://bsky.app/profile/benjakub.bsky.social"
+      class="tooltip"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <i class="fa-brands fa-bluesky"></i
+      ><span class="tooltiptext">Bluesky</span></a
+    >
+    <a
+      href="discord://-/users/benjamin_79599"
+      class="tooltip"
+      rel="noopener noreferrer"
+      target="_blank"
+      ><i class="fa-brands fa-discord"></i
+      ><span class="tooltiptext">Discord</span></a
+    >
+    <a
+      href="https://www.linkedin.com/in/benjamin-kubricky-01003a338/
+    "
+      class="tooltip"
+      rel="noopener noreferrer"
+      target="_blank"
+      ><i class="fa-brands fa-linkedin-in"></i
+      ><span class="tooltiptext">LinkedIn</span></a
+    >
+  </nav>
+  <div class="info">
+    <span>&copy; 2025 Kubricky Enterprises. All Rights Reserved.</span>
+    <span class="terms" onclick="window.dialog.showModal();"
+      >Terms and Conditions</span
+    >
+    <dialog id="dialog">
+      <h2>Terms and Conditions</h2>
+      <p>These are the terms and conditions of this website.</p>
+      <button onclick="window.dialog.close();" aria-label="close" class="x">
+        ❌
+      </button>
+    </dialog>
+    <span class="privacy" onclick="window.policy.showModal();"
+      >Privacy Policy</span
+    >
+    <dialog id="policy">
+      <h2>Privacy Policy</h2>
+      <p>This is the privacy policy and how I will use your data.</p>
+      <button onclick="window.policy.close();" aria-label="close" class="x">
+        ❌
+      </button>
+    </dialog>
+    <a
+      href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
+      id="email"
+      >Send Email</a
+    >
+  </div>
+</footer>
 <script async
 src="https://js.stripe.com/v3/buy-button.js">
 </script>

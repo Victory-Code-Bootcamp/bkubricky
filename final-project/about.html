@@ -120,6 +120,26 @@
       </nav>
       <div class="info">
         <span>&copy; 2025 Kubricky Enterprises. All Rights Reserved.</span>
+        <span class="terms" onclick="window.dialog.showModal();"
+          >Terms and Conditions</span
+        >
+        <dialog id="dialog">
+          <h2>Terms and Conditions</h2>
+          <p>These are the terms and conditions of this website.</p>
+          <button onclick="window.dialog.close();" aria-label="close" class="x">
+            ❌
+          </button>
+        </dialog>
+        <span class="privacy" onclick="window.policy.showModal();"
+          >Privacy Policy</span
+        >
+        <dialog id="policy">
+          <h2>Privacy Policy</h2>
+          <p>This is the privacy policy and how I will use your data.</p>
+          <button onclick="window.policy.close();" aria-label="close" class="x">
+            ❌
+          </button>
+        </dialog>
         <a
           href="mailto:bkubricky@gmail.com?subject=Hello%20from%20your%20website&body=Hi,%20I%20really%20like%20your%20website."
           id="email"

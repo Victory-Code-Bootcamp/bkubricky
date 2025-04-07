@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   background-color: rgb(52, 63, 92);
   margin: auto;
   margin-top: 1vh;
@@ -47,7 +47,7 @@ footer {
 }
 #donate {
   width: 50vw;
-  margin: 10vh auto;
+  margin: 12vh auto;
   text-align: center;
 }
 details {
@@ -119,7 +119,7 @@ iframe {
   visibility: visible;
 }
 #main {
-  margin: 10vh auto;
+  margin: 12vh auto;
   width: 90vw;
 }
 #container {
@@ -128,7 +128,7 @@ iframe {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 80%;
-  margin: 10vh auto 1vh auto;
+  margin: 12vh auto 1vh auto;
 }
 input,
 textarea {
@@ -233,14 +233,14 @@ dialog::backdrop {
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     width: 100vw;
   }
   #main {
     width: 95vw;
     min-width: 600px;
-    margin: auto;
+    margin: 12vh auto;
   }
   .info {
     font-size: 0.7em;
