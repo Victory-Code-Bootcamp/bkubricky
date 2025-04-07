@@ -261,4 +261,7 @@ dialog::backdrop {
   details {
     width: 95%;
   }
+  details summary {
+    margin-bottom: 1vh;
+  }
 }
