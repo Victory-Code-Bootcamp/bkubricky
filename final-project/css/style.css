@@ -88,10 +88,10 @@ button:hover {
   background-color: rgb(189, 41, 45);
 }
 iframe {
-  width: 50vw;
+  width: 70vw;
   height: 50vh;
-  min-width: 500px;
-  min-height: 450px;
+  /* min-width: 500px;
+  min-height: 450px; */
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   margin: 2vh auto;
@@ -246,7 +246,7 @@ dialog::backdrop {
     font-size: 0.7em;
   }
   iframe {
-    width: 95%;
+    width: 95vw;
     margin: auto;
   }
   footer {
