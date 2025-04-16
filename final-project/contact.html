@@ -44,7 +44,8 @@
     </header>
     <div id="container">
       <h2>Send me a message</h2>
-      <form action="/submit" method="POST">
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
         <br />
