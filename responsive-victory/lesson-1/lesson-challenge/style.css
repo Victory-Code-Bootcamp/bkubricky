@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size-large: 2rem;
+  --margin-large: 1.5rem;
+  --padding-medium: 1rem;
+}
+
+body {
+  color: var(--primary-color);
+  margin: var(--margin-large);
+  font-size: var(--font-size-large);
+}
+
+button {
+  background-color: var(--secondary-color);
+  padding: var(--padding-medium);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
