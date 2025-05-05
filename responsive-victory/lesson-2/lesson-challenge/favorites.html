@@ -10,7 +10,9 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 w-100 z-1"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Travel Gallery</a>
         <button
@@ -41,208 +43,313 @@
     </nav>
 
     <div class="container my-5">
-      <h1 class="text-center mb-4">Explore These Destinations</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Destination Cards -->
-        <!-- 1. Prague -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/753337/pexels-photo-753337.jpeg"
-              class="card-img-top"
-              alt="Prague"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Prague</h5>
-              <p class="card-text">
-                Discover the beauty of Prague, the City of a Hundred Spires.
-              </p>
-              <a
-                href="https://www.prague.eu/en"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
-              >
+      <h1 class="text-center mb-4 pt-3">Explore These Destinations</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item g-4">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button z-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Destinations in Europe
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body d-flex flex-column flex-md-row gap-3">
+              <!-- <div class=""> -->
+              <!-- Destination Cards -->
+              <!-- 1. Prague -->
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.pexels.com/photos/161077/prague-vencel-square-czech-republic-church-161077.jpeg"
+                    class="card-img-top"
+                    alt="Prague"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Prague</h5>
+                    <p class="card-text">
+                      Discover the beauty of Prague, the City of a Hundred
+                      Spires.
+                    </p>
+                    <a
+                      href="https://www.prague.eu/en"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 6. Paris -->
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="card-img-top"
+                    alt="Paris"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Paris</h5>
+                    <p class="card-text">
+                      Experience the romantic charm of the City of Light.
+                    </p>
+                    <a
+                      href="https://en.parisinfo.com/"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- 8. Rome -->
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg"
+                    class="card-img-top"
+                    alt="Rome"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Rome</h5>
+                    <p class="card-text">
+                      Walk through history in the Eternal City.
+                    </p>
+                    <a
+                      href="https://www.turismoroma.it/en"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Munich -->
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.pexels.com/photos/9827/pexels-photo-9827.jpeg"
+                    class="card-img-top"
+                    alt="Munich"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Munich</h5>
+                    <p class="card-text">
+                      Explore Munich, home of Oktoberfest and Bavarian charm.
+                    </p>
+                    <a
+                      href="https://www.muenchen.de/int/en.html"
+                      class="btn btn-primary"
+                      target="_blank"
+                      >Visit Site</a
+                    >
+                  </div>
+                </div>
+                <!-- </div> -->
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- 2. New York City -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/5845684/pexels-photo-5845684.jpeg"
-              class="card-img-top"
-              alt="New York City"
-            />
-            <div class="card-body">
-              <h5 class="card-title">New York City</h5>
-              <p class="card-text">Experience the energy of the Big Apple.</p>
-              <a
-                href="https://www.nycgo.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
+          <div class="accordion-item z-0">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed z-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
               >
+                Destinations in Asia
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body d-flex flex-column flex-md-row gap-3">
+                <!-- 4. Hong Kong -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.pexels.com/photos/2300342/pexels-photo-2300342.jpeg"
+                      class="card-img-top"
+                      alt="Hong Kong"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hong Kong</h5>
+                      <p class="card-text">
+                        Visit the vibrant, fast-paced city of Hong Kong.
+                      </p>
+                      <a
+                        href="https://www.discoverhongkong.com"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 5. Tokyo -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      class="card-img-top"
+                      alt="Tokyo"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tokyo</h5>
+                      <p class="card-text">
+                        Dive into Tokyo’s high-tech and traditional culture.
+                      </p>
+                      <a
+                        href="https://www.gotokyo.org/en/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- 3. Munich -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/9827/pexels-photo-9827.jpeg"
-              class="card-img-top"
-              alt="Munich"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Munich</h5>
-              <p class="card-text">
-                Explore Munich, home of Oktoberfest and Bavarian charm.
-              </p>
-              <a
-                href="https://www.muenchen.de/int/en.html"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
               >
+                Destinations in Australia
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body d-flex flex-wrap gap-3">
+                <!-- 7. Sydney -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg"
+                      class="card-img-top"
+                      alt="Sydney"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Sydney</h5>
+                      <p class="card-text">
+                        Enjoy sunny beaches and the iconic Opera House.
+                      </p>
+                      <a
+                        href="https://www.sydney.com/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- 4. Hong Kong -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/2300342/pexels-photo-2300342.jpeg"
-              class="card-img-top"
-              alt="Hong Kong"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Hong Kong</h5>
-              <p class="card-text">
-                Visit the vibrant, fast-paced city of Hong Kong.
-              </p>
-              <a
-                href="https://www.discoverhongkong.com"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
               >
+                Destinations in Africa
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body d-flex flex-wrap gap-3">
+                <!-- 9. Cape Town -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.pexels.com/photos/136721/pexels-photo-136721.jpeg"
+                      class="card-img-top"
+                      alt="Cape Town"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cape Town</h5>
+                      <p class="card-text">
+                        Discover nature and culture at the tip of Africa.
+                      </p>
+                      <a
+                        href="https://www.capetown.travel/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- 5. Tokyo -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/315191/pexels-photo-315191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="card-img-top"
-              alt="Tokyo"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Tokyo</h5>
-              <p class="card-text">
-                Dive into Tokyo’s high-tech and traditional culture.
-              </p>
-              <a
-                href="https://www.gotokyo.org/en/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
               >
-            </div>
-          </div>
-        </div>
-
-        <!-- 6. Paris -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/1308940/pexels-photo-1308940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              class="card-img-top"
-              alt="Paris"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Paris</h5>
-              <p class="card-text">
-                Experience the romantic charm of the City of Light.
-              </p>
-              <a
-                href="https://en.parisinfo.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- 7. Sydney -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/995765/pexels-photo-995765.jpeg"
-              class="card-img-top"
-              alt="Sydney"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Sydney</h5>
-              <p class="card-text">
-                Enjoy sunny beaches and the iconic Opera House.
-              </p>
-              <a
-                href="https://www.sydney.com/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- 8. Rome -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg"
-              class="card-img-top"
-              alt="Rome"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rome</h5>
-              <p class="card-text">Walk through history in the Eternal City.</p>
-              <a
-                href="https://www.turismoroma.it/en"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- 9. Cape Town -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg"
-              class="card-img-top"
-              alt="Cape Town"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Cape Town</h5>
-              <p class="card-text">
-                Discover nature and culture at the tip of Africa.
-              </p>
-              <a
-                href="https://www.capetown.travel/"
-                class="btn btn-primary"
-                target="_blank"
-                >Visit Site</a
-              >
+                Destinations in America
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body d-flex flex-wrap gap-3">
+                <!-- 2. New York City -->
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="https://images.pexels.com/photos/5845684/pexels-photo-5845684.jpeg"
+                      class="card-img-top"
+                      alt="New York City"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">New York City</h5>
+                      <p class="card-text">
+                        Experience the energy of the Big Apple.
+                      </p>
+                      <a
+                        href="https://www.nycgo.com/"
+                        class="btn btn-primary"
+                        target="_blank"
+                        >Visit Site</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
