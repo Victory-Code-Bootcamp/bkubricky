@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add Two Numbers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        background-color: #f4f4f4;
+      }
+      input {
+        width: 120px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input:invalid {
+        border-color: red;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      .error {
+        color: red;
+        margin-top: 0.5rem;
+      }
+      .result {
+        margin-top: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Two Numbers</h1>
+
+    <input type="text" id="num1" placeholder="First number" />
+    <input type="text" id="num2" placeholder="Second number" />
+    <button id="addBtn">Add</button>
+
+    <div id="error" class="error"></div>
+    <div id="result" class="result"></div>
+
+    <script>
+      const num1Input = document.getElementById("num1");
+      const num2Input = document.getElementById("num2");
+      const addBtn = document.getElementById("addBtn");
+      const errorDiv = document.getElementById("error");
+      const resultDiv = document.getElementById("result");
+
+      function validateInput(input) {
+        const value = input.value.trim();
+        if (value === "") return false;
+        return !isNaN(Number(value));
+      }
+
+      function updateValidation() {
+        errorDiv.textContent = "";
+        resultDiv.textContent = "";
+        if (!validateInput(num1Input) || !validateInput(num2Input)) {
+          errorDiv.textContent = "Please enter valid numbers.";
+        }
+      }
+
+      num1Input.addEventListener("input", updateValidation);
+      num2Input.addEventListener("input", updateValidation);
+
+      addBtn.addEventListener("click", () => {
+        errorDiv.textContent = "";
+        resultDiv.textContent = "";
+
+        const num1 = num1Input.value.trim();
+        const num2 = num2Input.value.trim();
+
+        if (num1 === "" || num2 === "") {
+          errorDiv.textContent = "Please enter both numbers.";
+          return;
+        }
+
+        const number1 = parseFloat(num1);
+        const number2 = parseFloat(num2);
+
+        if (isNaN(number1) || isNaN(number2)) {
+          errorDiv.textContent = "Please enter valid numbers.";
+          return;
+        }
+
+        const sum = number1 + number2;
+        resultDiv.textContent = `The sum is: ${sum}`;
+      });
+    </script>
+  </body>
+</html>
