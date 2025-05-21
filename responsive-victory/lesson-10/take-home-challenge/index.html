@@ -1,1 +1,47 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Info Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pokémon Info Viewer</h1>
+
+    <form id="pokemonForm">
+      <label>
+        Enter Pokémon Name:
+        <input type="text" id="pokemonName" required />
+      </label>
+      <br /><br />
+
+      <strong>Select Info to Display:</strong><br />
+      <label><input type="checkbox" id="name" checked /> Name</label><br />
+      <label><input type="checkbox" id="height" /> Height</label><br />
+      <label><input type="checkbox" id="weight" /> Weight</label><br />
+      <label><input type="checkbox" id="abilities" /> Abilities</label
+      ><br /><br />
+
+      <button type="submit">Get Info</button>
+    </form>
+
+    <div class="info-box" id="pokemonInfo"></div>
+
+    <div class="accordion">
+      <button id="toggleAbilities">All Known Pokémon Abilities ⌄</button>
+      <div class="accordion-content" id="abilitiesContent">
+        <ul id="abilitiesList"></ul>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <button id="togglePokemon">All Known Pokémon Names ⌄</button>
+      <div class="accordion-content" id="pokemonListContent">
+        <ul id="pokemonList"></ul>
+      </div>
+    </div>
+
+    <script src="pokemon.js"></script>
+  </body>
+</html>

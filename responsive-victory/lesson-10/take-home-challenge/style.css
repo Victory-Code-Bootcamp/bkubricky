@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+.info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.accordion {
+  margin-top: 2rem;
+}
+
+.accordion button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #007bff;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background-color: #f1f1f1;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
