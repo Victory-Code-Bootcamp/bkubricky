@@ -32,8 +32,17 @@ function addListItems() {
   if (text.value.trim() !== "") {
     const li = document.createElement("li");
     li.textContent = text.value;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.style.marginLeft = "10px";
+    deleteBtn.addEventListener("click", () => {
+      listItem.removeChild(li);
+    });
+
+    li.appendChild(deleteBtn);
     listItem.appendChild(li);
-    text.value = ""; // Optional: clear input after adding
+    text.value = "";
   }
 }
 
@@ -48,9 +57,12 @@ function hideElement() {
 // Add event listeners to the buttons
 const button = document.getElementById("fetchButton");
 button.addEventListener("click", fetchPokemon);
+
 const clickMeButton = document.getElementById("clickMe");
 clickMeButton.addEventListener("click", clickMeListener);
+
 const addItem = document.getElementById("addItems");
 addItem.addEventListener("click", addListItems);
+
 const hideItem = document.getElementById("hideMe");
 hideItem.addEventListener("click", hideElement);
