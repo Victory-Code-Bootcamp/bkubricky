@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      img {
+        width: 5vw;
+      }
+      .product,
+      .cart-item {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .cart-summary {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      button {
+        padding: 6px 10px;
+        margin: 2px;
+      }
+      #cart {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enhanced Shopping Cart</h1>
+
+    <div id="product-list"></div>
+
+    <h2>Cart</h2>
+    <div id="cart"></div>
+
+    <div class="cart-summary">
+      Total Cart Value: $<span id="total-value">0.00</span>
+    </div>
+
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <script>
+      // create list of products in an array of objects
+      const products = [
+        {
+          id: 1,
+          name: "Apple",
+          price: 1.25,
+          image:
+            "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg",
+        },
+        {
+          id: 2,
+          name: "Banana",
+          price: 0.75,
+          image:
+            "https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        },
+        {
+          id: 3,
+          name: "Orange",
+          price: 1.0,
+          image:
+            "https://images.pexels.com/photos/5987154/pexels-photo-5987154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        },
+      ];
+      // target product list
+      const productList = document.getElementById("product-list");
+      // target cart section
+      const cartContainer = document.getElementById("cart");
+
+      // iterate through list of products and insert HTML
+      function displayProducts() {
+        products.forEach((product) => {
+          const div = document.createElement("div");
+          div.className = "product";
+          div.innerHTML = `
+                <h3>${product.name}</h3>
+                <img src=${product.image} alt=${product.name}></img>
+                <p>Price: $${product.price.toFixed(2)}</p>
+                <button onclick="addToCart(${product.id})">Add to Cart</button>
+              `;
+          productList.appendChild(div);
+        });
+      }
+      // returns cart information locally
+      function getCart() {
+        return JSON.parse(localStorage.getItem("cart")) || [];
+      }
+      // stores cart information locally
+      function saveCart(cart) {
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+
+      function addToCart(productId) {
+        const product = products.find((p) => p.id === productId);
+        let cart = getCart();
+        const existing = cart.find((item) => item.id === productId);
+
+        if (existing) {
+          existing.quantity += 1;
+        } else {
+          cart.push({ ...product, quantity: 1 });
+        }
+
+        saveCart(cart);
+        renderCart();
+      }
+
+      function updateQuantity(productId, change) {
+        let cart = getCart();
+        const item = cart.find((item) => item.id === productId);
+
+        if (item) {
+          item.quantity += change;
+          if (item.quantity <= 0) {
+            cart = cart.filter((i) => i.id !== productId);
+          }
+          saveCart(cart);
+          renderCart();
+        }
+      }
+
+      function removeItem(productId) {
+        let cart = getCart().filter((item) => item.id !== productId);
+        saveCart(cart);
+        renderCart();
+      }
+
+      function clearCart() {
+        localStorage.removeItem("cart");
+        renderCart();
+      }
+
+      function updateTotal() {
+        const cart = getCart();
+        const total = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0
+        );
+        document.getElementById("total-value").textContent = total.toFixed(2);
+      }
+
+      function renderCart() {
+        const cart = getCart();
+        cartContainer.innerHTML = "";
+
+        if (cart.length === 0) {
+          cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+        } else {
+          cart.forEach((item) => {
+            const div = document.createElement("div");
+            div.className = "cart-item";
+            div.innerHTML = `
+                  <strong>${item.name}</strong> - $${item.price.toFixed(2)} x ${
+              item.quantity
+            } = $${(item.price * item.quantity).toFixed(2)}<br/>
+                  <button onclick="updateQuantity(${item.id}, 1)">+</button>
+                  <button onclick="updateQuantity(${item.id}, -1)">-</button>
+                  <button onclick="removeItem(${item.id})">Remove</button>
+                `;
+            cartContainer.appendChild(div);
+          });
+        }
+
+        updateTotal();
+      }
+
+      // Initialize
+      displayProducts();
+      renderCart();
+    </script>
+  </body>
+</html>
