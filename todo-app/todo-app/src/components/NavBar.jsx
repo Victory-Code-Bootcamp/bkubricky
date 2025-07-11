@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
   return (
-    <>
-      <header>
-        <div>This is the nav bar placeholder</div>
-      </header>
-    </>
+    <nav>
+      <Link to="/">All Todos</Link> |<Link to="/about">About</Link> |
+      <Link to="/meet-the-team">Meet the Developer</Link>
+    </nav>
   );
 }
+
 export default NavBar;
