@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TextField,
   Card,
@@ -13,24 +13,53 @@ const initialTodos = [
   { id: 3, text: "Make bed", completed: false },
   { id: 4, text: "Brush teeth", completed: true },
 ];
+const fetchTodos = async (setTodos) => {
+  try {
+    const response = await fetch("https://todo-app-backend-n0mo.onrender.com/");
+    const data = await response.json();
+    setTodos(data);
+  } catch (error) {
+    console.error("Error fetching todos:", error);
+  }
+};
 
 function TodoList() {
-  const [todos, setTodos] = useState(initialTodos);
+  const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
   const [currentlyEditingId, setCurrentlyEditingId] = useState(null);
   const [editText, setEditText] = useState("");
 
+  // Fetch todos when component mounts
+  useEffect(() => {
+    fetchTodos(setTodos);
+  }, []);
+
   const handleInputChange = (e) => setNewTodo(e.target.value);
 
-  const handleAddTodo = () => {
+  const handleAddTodo = async () => {
     if (newTodo.trim() === "") return;
     const newTodoItem = {
       id: Date.now(),
       text: newTodo.trim(),
       completed: false,
     };
-    setTodos([...todos, newTodoItem]);
-    setNewTodo("");
+    try {
+      const response = await fetch(
+        "https://todo-app-backend-n0mo.onrender.com/new",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTodoItem), // Only send text, no _id or completed
+        }
+      );
+      const data = await response.json();
+      setTodos([...todos, data]); // Update state with new todo from the backend
+      setNewTodo(""); // Reset input
+    } catch (error) {
+      console.error("Error adding todo:", error);
+    }
   };
 
   const toggleTodo = (id) => {
