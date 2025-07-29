@@ -17,10 +17,10 @@ const MeetTheDeveloper = () => {
       </h1>
 
       <p>
-        Hello! I’m <strong>Ben Kub</strong>, an Occupational Therapy Assistant
-        and a passionate Web Application Developer. I specialize in building
-        user-friendly, scalable applications using modern technologies like
-        React, the MERN stack, and more.
+        Hello! I’m <strong>Ben Kubricky</strong>, an Occupational Therapy
+        Assistant and a passionate Web Application Developer. I specialize in
+        building user-friendly, scalable applications using modern technologies
+        like React, the MERN stack, and more.
       </p>
 
       <p>
@@ -41,7 +41,7 @@ const MeetTheDeveloper = () => {
         reach out via:
       </p>
 
-      <ul>
+      <ul style={{ listStyleType: "none" }}>
         <li>
           <a
             href="https://github.com/bkubricky"
